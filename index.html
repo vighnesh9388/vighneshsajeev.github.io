@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <title>Vighnesh Sajeev - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
+  <header id="header">
+    <h1>Vighnesh Sajeev</h1>
+    <button id="dark-mode-toggle">🌙</button>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -19,42 +20,49 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a brief introduction about yourself, your interests, and your skills.</p>
-    <img src="path-to-your-photo.jpg" alt="Your Name">
-  </section>
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Hi, I'm Vighnesh Sajeev, a passionate developer with a love for creating innovative solutions. I specialize in web development, data science, and AI. My goal is to build applications that make a difference.</p>
+      <img src="profile-photo.jpg" alt="Vighnesh Sajeev" class="profile-photo">
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-item">
-        <h3>Project Title</h3>
-        <p>Brief description of the project. Mention the technologies used.</p>
-        <a href="link-to-project">View Project</a>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Project A</h3>
+          <p>A web application that does amazing things. Built with HTML, CSS, and JavaScript.</p>
+          <a href="https://github.com/vighnesh9388/project-a">View Project</a>
+        </div>
+        <div class="project-item">
+          <h3>Project B</h3>
+          <p>An AI-based solution for analyzing data trends. Built with Python and TensorFlow.</p>
+          <a href="https://github.com/vighnesh9388/project-b">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
       </div>
-      <!-- Repeat for more projects -->
-    </div>
-  </section>
+    </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>Download my <a href="path-to-your-resume.pdf">resume</a> or view it below:</p>
-    <embed src="path-to-your-resume.pdf" width="100%" height="600px" />
-  </section>
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p>Download my <a href="resume.pdf">resume</a> or view it below:</p>
+      <embed src="resume.pdf" width="100%" height="600px" />
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out via email or social media:</p>
-    <ul>
-      <li><a href="mailto:your-email@example.com">your-email@example.com</a></li>
-      <li><a href="https://linkedin.com/in/your-profile">LinkedIn</a></li>
-      <li><a href="https://github.com/your-username">GitHub</a></li>
-    </ul>
-  </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Feel free to reach out via email or social media:</p>
+      <ul>
+        <li><a href="mailto:vighnesh@example.com">vighnesh@example.com</a></li>
+        <li><a href="https://linkedin.com/in/vighnesh9388">LinkedIn</a></li>
+        <li><a href="https://github.com/vighnesh9388">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <p>&copy; 2024 Vighnesh Sajeev. All rights reserved.</p>
   </footer>
 
   <script src="scripts.js"></script>
