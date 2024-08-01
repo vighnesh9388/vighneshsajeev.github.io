@@ -5,10 +5,12 @@
     --text-dark: #f5f5f5;
     --primary-color: #6200ea;
     --secondary-color: #03dac5;
+    --button-color: #6200ea;
+    --button-hover-color: #3700b3;
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background: var(--background-light);
@@ -19,7 +21,7 @@
   header {
     background: var(--primary-color);
     color: #fff;
-    padding: 15px;
+    padding: 15px 0;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -37,16 +39,18 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
   }
   
   header nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
   }
   
   header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s;
   }
   
@@ -63,37 +67,71 @@
     position: absolute;
     right: 20px;
     top: 20px;
+    transition: transform 0.3s;
+  }
+  
+  #dark-mode-toggle:hover {
+    transform: scale(1.1);
   }
   
   .section {
     padding: 100px 20px;
     text-align: center;
+    transition: opacity 0.3s;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
   .profile-photo {
     border-radius: 50%;
     width: 150px;
     margin-top: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .profile-photo:hover {
+    transform: scale(1.1);
   }
   
   .project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
   }
   
   .project-item {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 15px;
     padding: 20px;
     width: 300px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   
   .project-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button {
+    display: inline-block;
+    background: var(--button-color);
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background: var(--button-hover-color);
   }
   
   footer {
@@ -101,7 +139,6 @@
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    position: relative;
   }
   
   body.dark-mode {
@@ -119,5 +156,11 @@
   
   body.dark-mode footer {
     background: #1f1f1f;
+  }
+  
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+    }
   }
   
