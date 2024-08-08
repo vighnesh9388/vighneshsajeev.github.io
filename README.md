@@ -1,4 +1,4 @@
-# GitHub Pages Testing
+# GitHub.io and Github Pages Deployment Testing
 
 This repository is for testing GitHub Pages and deployment.
 
